@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dong Ho Dem</title>
+    <script src="DongHo.js"></script>
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+    #hours {
+    border: 2px solid #0597FF;
+    background-color: #0597FF;
+    padding: 50px;
+    font-size: 60px;
+    color: white;
+}
+    #minutes {
+    border: 2px solid #0597FF;
+    background-color: #0597FF;
+
+    padding: 50px;
+    font-size: 60px;
+    color: white;
+}
+    #seconds{
+    border: 2px solid #0597FF;
+    background-color: #0597FF;
+    padding: 50px;
+    font-size: 60px;
+    color: white;
+}
+    #buttons {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+    #start{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0597FF;
+        margin: 2px;
+        border-radius: 40px;
+}
+    #stop{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0597FF;
+        margin: 2px;
+        border-radius: 40px
+}
+    #reset{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0597FF;
+        margin: 2px;
+        border-radius: 40px;
+}
+    #reset:hover{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0176C8;
+        margin: 2px;
+        border-radius: 40px;
+}
+    #stop:hover{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0176C8;
+        margin: 2px;
+        border-radius: 40px;
+}
+    #start:hover{
+        font-size: 60px;
+        border: 2px solid #0597FF;
+        color: white;
+        background-color: #0176C8;
+        margin: 2px;
+        border-radius: 40px;
+}
+</style>
+<body>
+    <div>
+    <span id='hours'>00</span> <span id='minutes'>00</span> <span id='seconds'>00</span>
+    </div> 
+    <div id = 'buttons'>
+        <button id = 'start' onclick="startClock()">Start</button>
+        <button id = 'stop' onclick="stopClock()">Stop</button>
+        <button id = 'reset' onclick="resetClock()">Reset</button>
+    </div>
+</body>
+</html>
